@@ -26,7 +26,7 @@ local_workflow = DAG(
     end_date=datetime(2021, 4, 1)
 )
 
-
+ 
 URL_PREFIX = 'https://s3.amazonaws.com/nyc-tlc/trip+data' 
 URL_TEMPLATE = URL_PREFIX + '/yellow_tripdata_{{ execution_date.strftime(\'%Y-%m\') }}.csv'
 OUTPUT_FILE_TEMPLATE = AIRFLOW_HOME + '/output_{{ execution_date.strftime(\'%Y-%m\') }}.csv'
