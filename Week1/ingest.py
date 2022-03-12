@@ -17,7 +17,7 @@ def main(params):
     port = params.port 
     db = params.db
     table_name = params.table_name
-    csv_name = 'yellow_tripdata_2021-01.csv'
+    csv_name = params.csv_name
 
 
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
@@ -61,8 +61,9 @@ if __name__ == '__main__':
     parser.add_argument('--password', required=True, help='password for postgres')
     parser.add_argument('--host', required=True, help='host for postgres')
     parser.add_argument('--port', required=True, help='port for postgres')
-    parser.add_argument('--db', required=True, help='database name for postgres')
+    parser.add_argument('--db', required=True, help='database name for postgres') ##according to the name configured in postgres admin.
     parser.add_argument('--table_name', required=True, help='name of the table where we will write the results to')
+    parser.add_argument('--csv_name', required=True, help='name of the csv - source of data')
 
     args = parser.parse_args()
 
