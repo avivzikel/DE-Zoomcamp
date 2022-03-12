@@ -9,3 +9,7 @@ Course Reference Link: https://github.com/DataTalksClub/data-engineering-zoomcam
 * Containerized data ingestion scripts using Docker and Docker compose
 * Terraform Scripts to setup and configure the key services from GCP Account
 * Developed various SQL Queries for different scenarios using the datasets loaded onto Postgres Database
+* 
+**Data Talk Club: Data Engineering Course - Week 2 Summary:** [VS]
+
+![plot](https://github.com/avivzikel/DE-Zoomcamp/blob/week_second/week2/airflow/Week2Summary.png)
